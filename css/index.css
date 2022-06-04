@@ -1,0 +1,243 @@
+* {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(120, 166, 139, 0.3); */
+    background-color: whitesmoke;
+    display: flex;
+
+}
+
+.main-left-box {
+    height: 100%;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    filter: drop-shadow(2px 2px 1px #cdcdcd);
+
+}
+
+.initials {
+    margin-top: 100px;
+}
+
+.initials > input {
+    font-size: 18pt;
+    height: 60px;
+    width: 350px;
+    background-color: transparent;
+    border: 0;
+    
+}
+
+.test-title {
+    font-size: 36pt;
+    margin-top: -50px;
+}
+
+
+.tests > input {
+    cursor: pointer;
+    font-size: 18pt;
+    margin-top: 50px;
+    height: 60px;
+    width: 350px;
+    background-color: transparent;
+    border: 0;
+}
+
+.tests > input:hover {
+    background-color: #cdcdcd;
+}
+
+.logout {
+    
+    margin-top: auto;
+    margin-bottom: 0px;
+}
+
+.logout > input {
+    cursor: pointer;
+    font-size: 18pt;
+    height: 60px;
+    width: 350px;
+    background-color: transparent;
+    border: 0;
+}
+
+.logout:hover {
+    background-color: #cdcdcd;
+}
+
+.main-right-box {
+    background-color: whitesmoke;
+    height: 100%;
+    width: calc(100% - 350px);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.block {
+    display: none;
+    height: calc(100% - 55px);
+    
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin:35px;
+    width: 100%;
+
+    filter: drop-shadow(2px 2px 1px #cdcdcd);
+    
+}
+
+.block-career {
+    margin: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+}
+
+.welder-image {
+    background: url(../images/welder.jpg) no-repeat;
+}
+
+.metal-engineer-image {
+    background: url(../images/metal-engineer.jpg) no-repeat;
+}
+
+.economist-image {
+    background: url(../images/economist.jpg) no-repeat;
+}
+
+.cutter-image {
+    background: url(../images/cutter.jpg) no-repeat;
+}
+
+.constructor-image {
+    background: url(../images/constructor.jpg) no-repeat;
+}
+
+.stamper-image {
+    background: url(../images/stamper.jpg) no-repeat;
+}
+
+.foundry-man-image {
+    background: url(../images/foundry-man.jpg) no-repeat;
+}
+
+.designer-image {
+    background: url(../images/designer.jpg) no-repeat;
+}
+
+.electrician-image {
+    background: url(../images/electrician.jpg) no-repeat;
+}
+
+.welder-image, 
+.metal-engineer-image, 
+.economist-image, 
+.cutter-image, 
+.constructor-image,
+.stamper-image, 
+.foundry-man-image, 
+.designer-image, 
+.electrician-image{
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.block-career > a > div > div {
+    color: white;
+    font-size: 24pt;
+    padding-top: 75px;
+    padding-left: 15px;
+    text-shadow: 1px 1px 1px #000000;
+    transition: 0.4s;
+}
+
+.block-career:hover > a > div > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    text-align: center;
+    font-size: 22pt;
+}
+.sText{
+    transition: 0.4s;
+    font-size: 12pt;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.fText{
+    color: white;
+    font-size: 24pt;
+    padding-top: 75px;
+    padding-left: 15px;
+    text-shadow: 1px 1px 1px #000000;
+    transition: 0.4s;
+    
+}
+
+.welder-image:hover  >  .sText, 
+.metal-engineer-image:hover  >  .sText,
+.economist-image:hover  >  .sText,
+.cutter-image:hover  >  .sText,
+.constructor-image:hover  >  .sText,
+.stamper-image:hover  >  .sText,
+.foundry-man-image:hover  >  .sTextP,
+.designer-image:hover > .sText,
+.electrician-image:hover  >  .sText{  
+    display: flex;
+}
+
+.welder-image:hover  >  .fText, 
+.metal-engineer-image:hover  >  .fText,
+.economist-image:hover  >  .fText,
+.cutter-image:hover  >  .fText,
+.constructor-image:hover  >  .fText,
+.stamper-image:hover  >  .fText,
+.foundry-man-image:hover  >  .fText,
+.designer-image:hover > .fText,
+.electrician-image:hover  >  .fText{  
+    display: none;
+}
+.block-career:hover{
+    transform: scale(1.15, 1.15)
+}
+.welcomeText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36pt;
+    margin-top: -200px;
+    padding: 200px;
+    text-align: center;
+}
+
+.test-image{
+    height: 200px;
+    width: 200px;
+    background: url(../images/logo.PNG) no-repeat;
+    background-size: cover;
+}

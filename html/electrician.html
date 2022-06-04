@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Электрик</title>
+    <link rel="stylesheet" href="../css/test.css">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto&family=Source+Sans+Pro&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+<div class="main">
+    <div class="text">Тест на электрика</div>
+    <div class="electrician-block">
+
+    </div>
+    <div class="description-text">
+        <div class="block-questions">
+            <h2>Что является основной функцией автоматического выключателя? </h1>
+                <input type="radio" name="one" id="">Защита человека от поражения электрическим током<br>
+                <input type="radio" name="one" id="">Защита электрической сети от длительного перенапряжения<br>
+                <input type="radio" name="one" id="">Защита потребителей и проводников электроэнергии от сверхтока<br>
+            <h2>Соленоид это </h1>
+                <input type="radio" name="two" id="">пружина особого исполнения<br>
+                <input type="radio" name="two" id="">датчик скорости<br>
+                <input type="radio" name="two" id="">датчик измерения содержании соли<br>
+            <h2>Для чего предназначен концевой выключатель</h1>
+                <input type="radio" name="three" id="">Для определения конечного положения исполнительного устройства<br>
+                <input type="radio" name="three" id="">Для отглушения технологического трубопровода<br>
+                <input type="radio" name="three" id="">Для оконцевания оголенных проводов<br>
+            <h2>Что такое электрический контактор </h1>
+                <input type="radio" name="four" id="">Аппарат дистанционного действия для коммутации и защиты от сверхтоков<br>
+                <input type="radio" name="four" id="">"Аппарат для коммутации вручную"<br>
+                <input type="radio" name="four" id="">Аппарат дистанционного действия предназначенный для защиты линии от сверхтоков<br>
+            <h2>Что является чувствительным элементом в электротепловых реле защиты электродвигателей</h1>
+                <input type="radio" name="five" id="">Биметаллические пластины<br>
+                <input type="radio" name="five" id="">Реостаты<br>
+                <input type="radio" name="five" id="">Электромагниты<br>
+            <h2>Что такое коммутация электрической цепи</h1>
+                <input type="radio" name="six" id="">Процесс переключений электрических соединений элементов электрической цепи<br>
+                <input type="radio" name="six" id="">Процесс преобразования постоянного тока в переменный<br>
+                <input type="radio" name="six" id="">Процесс выноса заряженных частиц из дугового промежутка<br>
+            <h2>Какие аппараты предназначены для коммутации цепей управления</h1>
+                <input type="radio" name="seven" id="">Автоматические выключатели, вспомогательные контакты, контакторы<br>
+                <input type="radio" name="seven" id="">Пускатели, предохранители, разъединители<br>
+                <input type="radio" name="seven" id="">УЗО, выключатели нагрузки, разрядники<br>
+            <h2>Какое буквенное обозначение на схемах используется для контакторов</h1>
+                <input type="radio" name="eight" id="">KV<br>
+                <input type="radio" name="eight" id="">KM<br>
+                <input type="radio" name="eight" id="">KL<br>
+            <h2>Как маркируются выводы катушки управления электромагнитного контактора</h1>
+                <input type="radio" name="nine" id="">1L1-2T1<br>
+                <input type="radio" name="nine" id="">11-12<br>
+                <input type="radio" name="nine" id="">A1-A2<br>
+            <h2>Состояние изоляции обмоток ремонтируемой электрической машины проверяют</h1>
+                <input type="radio" name="ten" id="">Омметром<br>
+                <input type="radio" name="ten" id="">Ваттметром<br>
+                <input type="radio" name="ten" id="">Мегомметром<br>
+            <div class="buttonOk">Узнать результат</div>
+            <div class="empty"></div>
+        </div>  
+    </div>
+</div>
+<?php
+    $conn = mysqli_connect("localhost:8080/accounting", "root", "1111");
+
+?>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Инженер-металлург</title>
+    <link rel="stylesheet" href="../css/test.css">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto&family=Source+Sans+Pro&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+<div class="main">
+    <div class="text">Тест на инженера</div>
+    <div class="metal-engineer-block">
+
+    </div>
+    <div class="description-text">
+        <div class="block-questions">
+            <h2>Какую структуру имеет сталь 40 после полного отжига?</h1>
+                <input type="radio" name="one" id="">40% перлита + 60% феррита<br>
+                <input type="radio" name="one" id="">50% перлита + 50% феррита<br>
+                <input type="radio" name="one" id="">100% перлита<br>
+            <h2>Какая закономерность изменения механических свойств при отпуске справедлива для конструкционных сталей типа 40х?</h1>
+                <input type="radio" name="two" id="">С повышением температуры отпуска снижается твердость, пластичность и вязкость<br>
+                <input type="radio" name="two" id="">С повышением температуры отпуска снижается прочность, но повышается пластичность и вязкость<br>
+                <input type="radio" name="two" id="">С повышением температуры отпуска повышается твердость, пластичность и вязкость<br>
+            <h2>Каким образом атомы расположены в оцк решетке?</h1>
+                <input type="radio" name="three" id="">Атомы расположены в вершинах куба и один атом в центре объема куба <br>
+                <input type="radio" name="three" id="">Атомы расположены в вершинах куба и в центре каждой грани куба<br>
+                <input type="radio" name="three" id="">Атомы расположены в вершинах куба, в центре каждой грани и в центре объема куба<br>
+            <h2>Какой тип кристаллической решетки имеет feα (альфа-железо)?</h1>
+                <input type="radio" name="four" id="">ГЦК<br>
+                <input type="radio" name="four" id="">ОЦK<br>
+                <input type="radio" name="four" id="">ГПУ<br>   
+            <h2>Что такое аустенит в системе "железо-цементит"?</h1>
+                <input type="radio" name="five" id="">Твердый раствор углерода в δ-Fe<br>
+                <input type="radio" name="five" id="">Твердый раствор внедрения углерода в α-Fe<br>
+                <input type="radio" name="five" id="">Твердый раствор внедрения углерода в γ-Fe<br> 
+            <h2>Какие стали называют цементуемыми?</h1>
+                <input type="radio" name="six" id="">Это любые стали, которые подвергают цементации<br>
+                <input type="radio" name="six" id="">Это стали с содержанием углерода 0,1-0,3%<br>
+                <input type="radio" name="six" id="">Это стали, которые после соответствующей термообработки содержат в своей структуре большое количество цементита<br>
+            <h2>Сколько углерода содержится в стали шх15?</h1>
+                <input type="radio" name="seven" id="">1,5%<br>
+                <input type="radio" name="seven" id="">0,15%<br>
+                <input type="radio" name="seven" id=""> 1%<br>
+            <h2>Какие стали не относятся к строительным?</h1>
+                <input type="radio" name="eight" id="">10ХНДП, 15ХСНД, 17Г2АФБ<br>
+                <input type="radio" name="eight" id="">12Х2СМФ, 12ХГН2МФБАЮ<br>
+                <input type="radio" name="eight" id="">12К, 15К, 20К<br>
+            <h2>Что такое диаграмма состояния?</h1>
+                <input type="radio" name="nine" id="">Это графическое отображение температур кристаллизации компонентов сплава<br>
+                <input type="radio" name="nine" id="">Это графическое отображение изменения концентрации компонентов в сплаве<br>
+                <input type="radio" name="nine" id="">Это графическое отображение фазового состава сплава в зависимости от температуры и концентрации<br>
+            <h2>Какой сплав называют мельхиором?</h1>
+                <input type="radio" name="ten" id="">Сплав меди с никелем<br>
+                <input type="radio" name="ten" id="">Сплав меди с хромом<br>
+                <input type="radio" name="ten" id="">Сплав молибдена и хрома<br>
+            <div class="buttonOk">Узнать результат</div>
+            <div class="empty"></div>
+        </div>  
+    </div>
+</div>
+<?php
+    $conn = mysqli_connect("localhost:8080/accounting", "root", "1111");
+
+?>
+</body>
+</html>

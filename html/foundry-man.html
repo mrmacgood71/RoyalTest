@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Литейщик</title>
+    <link rel="stylesheet" href="../css/test.css">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto&family=Source+Sans+Pro&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+<div class="main">
+    <div class="text">Тест на литейщика</div>
+    <div class="foundry-man-block">
+
+    </div>
+    <div class="description-text">
+        <div class="block-questions">
+            <h2>Как часто осуществляется проверка состояния компенсаторов:</h1>
+                <input type="radio" name="one" id="">Один раз в месяц<br>
+                <input type="radio" name="one" id="">Oдин раз в полгода.<br>
+                <input type="radio" name="one" id="">Один раз в 3 месяца<br>
+            <h2>Какие требования установлены к подаче составов или отдельных вагонов и к выполнению маневровых работ на эстакадах и бункерах:</h1>
+                <input type="radio" name="two" id="">Подача должна производиться под руководством специалиста<br>
+                <input type="radio" name="two" id="">Подача должна производиться в отсутствие посторонних людей<br>
+                <input type="radio" name="two" id="">Подача должна производиться при наличии двух составителей вагонов<br>
+            <h2>Какие требования установлены к загружаемым в печи руде, ферросплавам и другим материалам:</h1>
+                <input type="radio" name="three" id="">Должны быть выдержаны в помещении не менее суток<br>
+                <input type="radio" name="three" id="">Должны быть выдержаны в помещении не менее смены<br>
+                <input type="radio" name="three" id="">Должны быть предварительно просушены или прокалены<br>
+            <h2>Чем характеризуются газоопасные места, относящиеся к I группе:</h1>
+                <input type="radio" name="four" id="">Кратковременное пребывание работников без газозащитной аппаратуры в таких местах смертельно опасно<br>
+                <input type="radio" name="four" id="">Содержание опасных веществ в воздухе рабочей зоны превышает предельно допустимой концентрации (далее – ПДК), и длительное пребывание работников без газозащитной аппаратуры в таких местах смертельно опасно<br>
+                <input type="radio" name="four" id="">Места, где возможно появление опасных веществ в количествах, превышающих ПДК<br>   
+            <h2>Куда необходимо направить получившего травму на объекте, где получаются, транспортируются, используются расплавы черных и цветных металлов и сплавы на основе этих расплавов</h1>
+                <input type="radio" name="five" id="">К руководителю производства работ<br>
+                <input type="radio" name="five" id="">В диспетчерскую<br>
+                <input type="radio" name="five" id=""> В пункт первой медицинской помощи<br> 
+            <h2>Какая должна быть максимально допустимая температура газа в газопроводах:</h1>
+                <input type="radio" name="six" id="">100°C<br>
+                <input type="radio" name="six" id="">85°C<br>
+                <input type="radio" name="six" id="">90°C<br>
+            <h2>Что должно применяться для устранения зависания материалов в бункерах:</h1>
+                <input type="radio" name="seven" id="">Лопаты<br>
+                <input type="radio" name="seven" id="">Вибраторы.<br>
+                <input type="radio" name="seven" id="">Специальные приспособления.<br>
+            <h2>В каких случаях не допускается отключение системы охлаждения кристаллизатора:</h1>
+                <input type="radio" name="eight" id="">До выгрузки слитка из камеры<br>
+                <input type="radio" name="eight" id="">При внезапной остановке процесса<br>
+                <input type="radio" name="eight" id="">При снижении температуры<br>
+            <h2>Какие шпалы должны применяться на железнодорожных путях шлакового отвала:</h1>
+                <input type="radio" name="nine" id="">Деревянные шпалы, пропитанные криазотом<br>
+                <input type="radio" name="nine" id="">Деревянные шпалы<br>
+                <input type="radio" name="nine" id="">Огнестойкие шпалы<br>
+            <h2>Что должны обеспечивать аспирационные системы:</h1>
+                <input type="radio" name="ten" id="">Бесперебойную работу технологического оборудования<br>
+                <input type="radio" name="ten" id="">Удаление опасных и вредных веществ от мест их выделения <br>
+                <input type="radio" name="ten" id="">Утилизацию опасных и вредных веществ<br>
+            <div class="buttonOk">Узнать результат</div>
+            <div class="empty"></div>
+        </div>
+    </div>
+</div>
+<?php
+    $conn = mysqli_connect("localhost:8080/accounting", "root", "1111");
+
+?>
+</body>
+</html>

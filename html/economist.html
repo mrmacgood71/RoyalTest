@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Экономист</title>
+    <link rel="stylesheet" href="../css/test.css">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto&family=Source+Sans+Pro&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+<div class="main">
+    <div class="text">Тест на экономиста</div>
+    <div class="economist-block">
+
+    </div>
+    <div class="description-text">
+        <div class="block-questions">
+            <h2>С какого момента фирма считается созданной? </h1>
+                <input type="radio" name="one" id="">с момента принятия устава <br>
+                <input type="radio" name="one" id=""> с момента заключения учредительного договора <br>
+                <input type="radio" name="one" id="">с момента государственной регистрации <br>
+            <h2>Являются ли представительства и филиалы предприятия юридическими лицами? </h1>
+                <input type="radio" name="two" id="">да<br>
+                <input type="radio" name="two" id="">нет<br>
+            <h2> Что является производственным результатом деятельности предприятия? </h1>
+                <input type="radio" name="three" id="">объем произведенной продукции<br>
+                <input type="radio" name="three" id="">выручка от реализации продукции<br>
+                <input type="radio" name="three" id="">прибыль от реализации продукции<br>
+            <h2>Машиностроительная фирма состоит из литейного, механического и сборочного цехов. Может ли полуфабрикат быть результатом работы сборочного цеха? </h1>
+                <input type="radio" name="four" id="">да<br>
+                <input type="radio" name="four" id="">нет<br>
+            <h2>При каких условиях общий объем продукции промышленной предприятия может быть определен в натуральном выражении? </h1>
+                <input type="radio" name="five" id="">может быть определен всегда<br>
+                <input type="radio" name="five" id="">продукция должна быть однородной <br>
+            <h2>Остатки продукции, не оплаченной в срок покупателем, в течение месяца уменьшаются. Какая продукция будет больше: </h1>
+                <input type="radio" name="six" id="">отгруженная<br>
+                <input type="radio" name="six" id="">реализованная<br>
+            <h2>Стоимость произведенной продукции в действующих ценах выросла за год на 8%. Цены за этот же период снизились на 2%. Как изменился объем продукции? </h1>
+                <input type="radio" name="seven" id="">увеличился на 16% <br>
+                <input type="radio" name="seven" id="">увеличился на 5,8% <br>
+                <input type="radio" name="seven" id="">увеличился на 10,2%<br>
+            <h2>К чему стремятся предприятия-производители различных благ в рамках рыночных отношений? </h1>
+                <input type="radio" name="eight" id="">к обмену своих товаров на другие нужные им блага с целью получить дополнительный объем благ<br>
+                <input type="radio" name="eight" id="">к возмещению издержек, связанных с производством своего товара <br>
+                <input type="radio" name="eight" id="">к улучшению условий своего существования<br>
+            <h2>Что предполагает право собственности предприятия: </h1>
+                <input type="radio" name="nine" id="">право владения объектом собственности <br>
+                <input type="radio" name="nine" id="">право распоряжений и использования объектов <br>
+                <input type="radio" name="nine" id="">право владения, распоряжения и использования объектов собственности в целях и пределах, установленных законодательством <br>
+            <h2>Какая из форм коллективной собственности основана преимущественно на личном труде членов этого коллектива:</h1>
+                <input type="radio" name="ten" id="">товарищество<br>
+                <input type="radio" name="ten" id="">кооперативы<br>
+                <input type="radio" name="ten" id="">арендные предприятия<br>
+            <div class="buttonOk">Узнать результат</div>
+            <div class="empty"></div>
+        </div>  
+    </div>
+</div>
+<?php
+    $conn = mysqli_connect("localhost:8080/accounting", "root", "1111");
+
+?>
+</body>
+</html>

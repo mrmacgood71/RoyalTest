@@ -1,0 +1,117 @@
+* {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+.text{
+    text-align: left;
+    width: 650px;
+    margin-bottom: 5px;
+    font-size: 36pt;
+}
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    
+}
+
+.welder-block {
+    background: url(../images/welder.jpg) no-repeat;
+}
+.constructor-block {
+    background: url(../images/constructor.jpg) no-repeat;
+}
+
+.cutter-block {
+    background: url(../images/cutter.jpg) no-repeat;
+}
+
+.designer-block {
+    background: url(../images/designer.jpg) no-repeat;
+}
+ 
+.economist-block {
+    background: url(../images/economist.jpg) no-repeat;
+}
+
+.electrician-block {
+    background: url(../images/electrician.jpg) no-repeat;
+}
+
+.foundry-man-block {
+    background: url(../images/foundry-man.jpg) no-repeat;
+}
+
+.stamper-block {
+    background: url(../images/stamper.jpg) no-repeat;
+}
+ 
+.metal-engineer-block {
+    background: url(../images/metal-engineer.jpg) no-repeat;
+}
+.welder-block, 
+.constructor-block, 
+.cutter-block,
+.designer-block, 
+.economist-block, 
+.electrician-block, 
+.foundry-man-block, 
+.stamper-block, 
+.metal-engineer-block{
+    background-size: cover;
+    border-radius: 30px;
+    margin-top: -0px;
+    height: 350px;
+    width: 650px;
+}
+
+
+
+.description-text {
+    font-size: 14pt;
+    color: black;
+    background-color: transparent;
+    height: 350px;
+    width: 650px;
+    margin-top: 20px;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+
+.block-questions{
+    height: 400%;
+    width:1000px;
+    min-width: 500px; 
+    
+}
+
+.buttonOk{
+   margin-top: 50px;
+   text-align: center;
+   height: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: 1s;
+}
+
+.empty{
+    height: 500px;
+}
+
+.buttonOk:hover{
+    background-color: lightgray;
+    cursor: pointer;
+}

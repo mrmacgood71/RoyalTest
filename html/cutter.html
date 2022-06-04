@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Фрезеровщик</title>
+    <link rel="stylesheet" href="../css/test.css">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto&family=Source+Sans+Pro&display=swap"
+          rel="stylesheet">
+</head>
+
+<body>
+<div class="main">
+    <div class="text">Тест на фрезеровщика</div>
+    <div class="cutter-block">
+
+    </div>
+    <div class="description-text">
+        <div class="block-questions">
+            <h2>Размер готовой детали, установленный измерением с допустимой погрешностью, называется:</h1>
+                <input type="radio" name="one" id="">Наибольший предельный<br>
+                <input type="radio" name="one" id="">Действительный<br>
+                <input type="radio" name="one" id="">Наименьший предельный<br>
+            <h2>Размер, относительно которого определяют предельные размеры и который проставляется на чертеже, называется </h1>
+                <input type="radio" name="two" id="">Наибольший предельный размер<br>
+                <input type="radio" name="two" id="">Действительный размер<br>
+                <input type="radio" name="two" id="">Номинальный размер<br>
+            <h2>Нормативно- технический документ, устанавливающий комплекс норм, правил, требований к объекту и утвержденный компетентным органом, называется:</h1>
+                <input type="radio" name="three" id="">Технологический процесс<br>
+                <input type="radio" name="three" id="">Чертеж<br>
+                <input type="radio" name="three" id="">Стандарт <br>
+            <h2>Разность между наибольшим предельным размером отверстия и наименьшим предельным размером вала это:</h1>
+                <input type="radio" name="four" id="">Наибольший натяг<br>
+                <input type="radio" name="four" id="">Наименьший натяг<br>
+                <input type="radio" name="four" id="">Наименьший зазор<br>
+            <h2>На чертеже сопрягаемых деталей для отверстия указан размер 50(+0,1),
+                а для вала – размер 50(+0,3; +0,2). Величина наибольшего натяга данного сопряжения составляет</h1>
+                <input type="radio" name="five" id="">0,5<br>
+                <input type="radio" name="five" id="">0,3<br>
+                <input type="radio" name="five" id="">0,2<br>
+            <h2>Поверхности, по которым детали соединяются в сборочные единицы называются:</h1>
+                <input type="radio" name="six" id="">свободные<br>
+                <input type="radio" name="six" id="">несопрягаемые<br>
+                <input type="radio" name="six" id="">сопрягаемые<br>
+            <h2>Диаметр основного вала на чертеже обозначается: </h1>
+                <input type="radio" name="seven" id="">Ø 70 f8<br>
+                <input type="radio" name="seven" id="">Ø 30 j6<br>
+                <input type="radio" name="seven" id="">Ø80 h8<br>
+            <h2>В обозначении основного отверстия на чертеже с числовым значением проставляется символ:</h1>
+                <input type="radio" name="eight" id="">G<br>
+                <input type="radio" name="eight" id="">H<br>
+                <input type="radio" name="eight" id="">F<br>
+            <h2>Диапазон номинальных размеров, наиболее часто применяющийся в общем машиностроении:</h1>
+                <input type="radio" name="nine" id="">От 0 до 1 мм<br>
+                <input type="radio" name="nine" id="">От 0 до 1 мм<br>
+                <input type="radio" name="nine" id="">Свыше 500 до 3150 мм<br>
+            <h2>Погрешность измерения - это:</h1>
+                <input type="radio" name="ten" id="">Разность значений величин, соответствующих двум соседним отметкам шкалы<br>
+                <input type="radio" name="ten" id="">Разность между результатом измерения и истинным значением измеряемой величины <br>
+                <input type="radio" name="ten" id="">Промежуток между двумя соседними отметками шкалы<br>
+            <div class="buttonOk">Узнать результат</div>
+            <div class="empty"></div>
+        </div>  
+    </div>
+</div>
+<?php
+    $conn = mysqli_connect("localhost:8080/accounting", "root", "1111");
+
+?>
+</body>
+</html>

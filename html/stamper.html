@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Штамповщик</title>
+    <link rel="stylesheet" href="../css/test.css">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto&family=Source+Sans+Pro&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+<div class="main">
+    <div class="text">Тест на штамповщика</div>
+    <div class="stamper-block">
+
+    </div>
+    <div class="description-text">
+        <div class="block-questions">
+            <h2>Какие требования предъявляются к цилиндрическим поверхностям? </h1>
+                <input type="radio" name="one" id="">цилиндричность, прямолинейность<br>
+                <input type="radio" name="one" id="">прямолинейность образующей, цилиндричность, круглость, соосность<br>
+                <input type="radio" name="one" id="">круглость, соосность, прямолинейность.<br>
+            <h2>Что такое движение подачи? </h1>
+                <input type="radio" name="two" id="">это движение резца по заготовке <br>
+                <input type="radio" name="two" id="">это поступательное движение резца, обеспечивающее непрерывное врезание в новые слои металла<br>
+                <input type="radio" name="two" id="">это поверхность резания при обработке<br>
+            <h2>Что называется передним углом? </h1>
+                <input type="radio" name="three" id="">угол между передней и задней поверхностью <br>
+                <input type="radio" name="three" id="">угол между передней поверхностью и плоскостью перпендикулярной плоскости резания <br>
+                <input type="radio" name="three" id=""> угол между передней поверхностью и плоскостью резания<br>
+            <h2>Какой инструмент используется для чистовой обработки отверстия? </h1>
+                <input type="radio" name="four" id="">сверло <br>
+                <input type="radio" name="four" id="">зенкер<br>
+                <input type="radio" name="four" id="">развертка <br>   
+            <h2>К классу валов относят детали, у которых: </h1>
+                <input type="radio" name="five" id="">длина значительно больше диаметра<br>
+                <input type="radio" name="five" id="">длина значительно меньше диаметра <br>
+                <input type="radio" name="five" id="">длина равна диаметру<br> 
+            <h2>Что необходимо учитывать при пользовании лимбами: </h1>
+                <input type="radio" name="six" id="">наличие смазки<br>
+                <input type="radio" name="six" id="">количество рисок на лимбе <br>
+                <input type="radio" name="six" id="">наличие люфтов<br>
+            <h2>Какая резьба характеризуется шагом профиль треугольный, угол профиля 60˚</h1>
+                <input type="radio" name="seven" id="">метрическая <br>
+                <input type="radio" name="seven" id="">дюймовая<br>
+                <input type="radio" name="seven" id="">трапецеидальная<br>
+            <div class="buttonOk">Узнать результат</div>
+            <div class="empty"></div>
+        </div>
+    </div>
+</div>
+<?php
+    $conn = mysqli_connect("localhost:8080/accounting", "root", "1111");
+
+?>
+</body>
+</html>
