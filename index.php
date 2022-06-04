@@ -40,10 +40,31 @@
             Добро пожаловать на&nbsp;новый сайт тестирования &laquo;TestRoyal&raquo;!
             Данный сайт был разработан специально для тестирования различных специалистов предприятия, с&nbsp;целью распознавания их&nbsp;профессиональных знаний.
             Для продолжения работы, пожалуйста, выберите тестируемую специальность
+                <?php
+                    echo "hello";
+                    define('DB_HOST', 'localhost');
+                    define('DB_USER', 'root');
+                    define('DB_PASSWORD', '1111');
+                    define('DB_NAME', 'accounting');
+                    define('DB_PORT', '3306');
 
-            <?php 
-                echo "hello";
-            ?>
+                    $mysql = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) or die('ggaaa');
+
+                    if ($mysql->connect_errno) {
+        //        exit('Error db is naebnuta');
+                        echo 'pizda';
+                    }
+
+                    echo 'pizda';
+                    $mysql->set_charset('utf8');
+
+                    $result = mysqli_query($mysql, "SELECT * FROM accounting.constructor_test");
+
+                    if ($result == null) {
+                        echo 'pizda result';
+                    }
+
+                ?>
             
         </div>
     

@@ -76,26 +76,52 @@
 
                         if(!empty($_POST)) {
                             $first_question = $_POST['one'];
+                            $second_question = $_POST['two'];
+                            $third_question= $_POST['three'];
+                            $fourth_question = $_POST['four'];
+                            $fifth_question = $_POST['five'];
+                            $sixth_question = $_POST['six'];
+                            $seventh_question = $_POST['seven'];
+                            $eighth_question = $_POST['eight'];
+                            $ninth_question = $_POST['nine'];
+                            $tenth_question = $_POST['ten'];
+
+
                             echo $first_question;
+                            echo $second_question;
+                            echo $third_question;
+                            echo $fourth_question;
+                            echo $sixth_question;
+                            echo $seventh_question;
+                            echo $eighth_question;
+                            echo $ninth_question;
+                            echo $tenth_question;
                         }
-                        $conn = mysqli_connect("localhost:8080/accounting", "root", "1111");
+
+                        $conn = new mysqli("localhost", "root", "1111", "accounting", "3306");
+
+                        mysqli_set_charset($conn, 'utf8');
                         $host = "localhost";
                         $user = "root";
-                        $password = "";
-                        $database_name = "stock";
+                        $password = "1111";
+                        $database_name = "accounting";
 
-                        $link = mysql_connect($host, $user, $password);
-                        mysql_select_db($database_name, $link);
-                        $sql = mysql_query("CALL selector();", $link);
+                        $link = mysqli_connect($host, $user, $password, $database_name) or die('бд настрой блять');
+                        $sql = mysqli_query($conn, "
+                            SELECT * FROM constructor_test;");
 
-                        while($result = mysql_fetch_array($sql)) {
-                            echo $result['id']." | ".$result['name_']." | ".$result['price']."<br>";
+                        while($result = mysqli_fetch_array($sql)) {
+                            echo $result['id']." | ".$result['question']." | ".$result['answer']."<br>";
                         }
+                        echo $result;
+                        echo $link;
 
+
+                        ini_set("display_errors", 1);
+                        error_reporting(-1);
                     ?>
                     </div>
             </form>
-
         </div>  
     </div>
 </div>
